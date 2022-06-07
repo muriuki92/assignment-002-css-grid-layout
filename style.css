@@ -1,0 +1,97 @@
+header{
+    text-align: center;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;  
+    height: 20vh;
+    line-height: 180%;
+    font-size: 40px;
+    grid-area: header;
+}
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    grid-template-areas: 
+    "c1 c2 c2 c3"
+    "c4 sub sub sub";
+border: 1px solid black;
+}
+#c1{
+    grid-area: c1;
+    border-right: 2px solid black;
+    border-bottom: 1px solid black;
+    
+}
+#c2{
+    grid-area: c2; 
+    border-right: 2px solid black;
+    border-bottom: 1px solid black;
+   text-align: center;
+} 
+#c2 img{
+    height: 60%;
+    width: 100%;
+
+}
+#c3{
+    grid-area: c3;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black; 
+ 
+}
+#c4{
+    grid-area: c4;
+    border-right: 1px solid black;
+  
+}
+.sub{
+    grid-area: sub;
+    height:50vh;
+
+}
+#politics{
+    background-color: goldenrod;
+    height: 10vh;
+}
+#technology{ 
+    background-color: cadetblue;
+    height: 10vh;
+    
+}
+#locals{
+    background-color: darkcyan;
+    height: 10vh;
+}
+#opinion{
+    background-color: forestgreen;
+    height: 10vh;
+}
+#sports{
+    background-color: blueviolet;
+    height: 10vh;
+}
+#c1 h2{
+    text-align: center;
+}
+#c2 h2{
+    text-align: center;
+}
+#c3 h2{
+    text-align: center;
+}
+#c4 h2{
+    text-align: center;
+}
+@media (max-width:576px){
+    .container{
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-areas:
+        "header"
+        "c1"
+        "c2" 
+        "c3"
+        "c4"
+        "sub"
+       ;}
+ }
